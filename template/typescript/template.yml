@@ -1,0 +1,6 @@
+language: typescript
+fprocess: node index.js
+welcome_message: |
+  You have created a new function which uses Node.js 14 (LTS), Express, TypeScript
+  and the OpenFaaS of-watchdog which gives greater control over HTTP responses.
+
