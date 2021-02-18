@@ -1,6 +1,6 @@
 # OpenFaaS TypeScript Functions
 
-This project offers templates for OpenFaaS that make use of Node and TypeScript. All templates use Node 14 and of-watchdog so you can have full control over the HTTP context.
+This project offers templates for [OpenFaaS](https://www.openfaas.com) that make use of Node and TypeScript. All templates use Node 14 and of-watchdog so you can have full control over the HTTP context.
 
 ## Installing the template
 
