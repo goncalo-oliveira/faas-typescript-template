@@ -2,10 +2,10 @@
   "name": "openfaas-typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "function.ts",
+  "main": "index.ts",
   "scripts": {
     "build": "tsc --project ./",
-    "start": "nodemon function.ts",
+    "start": "nodemon index.ts",
     "test": "echo \"Error: no test specified\""
   },
   "keywords": [],

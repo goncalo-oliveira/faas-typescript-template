@@ -1,12 +1,13 @@
-import express from 'express';
+import { Express } from 'express'
 
-const app = express();
-const listenPort = 9000;
+class Function {
+    public configure( server: Express ) {
+        server.get( '/', ( req, res ) => {
+            res.send( 'Hello world' );
+        } )
 
-app.get( '/', ( req, res ) => {
-  res.send( 'Hello world' );
-});
+        return ( server )
+    }
+}
 
-app.listen( listenPort, () => {
-  console.log( `[server] Listening on http://localhost:${listenPort}...` );
-});
+export default new Function()

@@ -17,6 +17,9 @@ RUN npm install --only=production
 # COPY function files and folders
 COPY function/ ./
 
+# replace handler
+COPY index.ts ./
+
 # Run any tests that may be available
 RUN npm test
 
@@ -44,7 +47,7 @@ USER app
 WORKDIR /home/app/
 
 ENV cgi_headers="true"
-ENV fprocess="node function.js"
+ENV fprocess="node index.js"
 ENV mode="http"
 ENV upstream_url="http://127.0.0.1:9000"
 

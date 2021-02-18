@@ -1,20 +1,16 @@
-import fastify from 'fastify'
+import { FastifyInstance } from 'fastify'
 
-const server = fastify()
-const port = 9000
+class Function {
+    public configure( server: FastifyInstance ) {
+        server.get( '/', async ( request, reply ) => {
+            reply.type( 'application/json' )
+                .code( 200 )
+      
+            return { message: 'Hello World!' }
+        } )
 
-server.get( '/', async ( request, reply ) => {
-  reply.type( 'application/json' )
-    .code( 200 )
+        return ( server );
+    }
+}
 
-  return { hello: 'world' }
-} )
-
-server.listen( port, ( err, address ) => {
-  if ( err ) {
-    console.error( err )
-    process.exit( 1 )
-  }
-
-  console.log( `[server] listening at ${address}` )
-} )
+export default new Function()
