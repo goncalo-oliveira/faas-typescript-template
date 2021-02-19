@@ -12,7 +12,7 @@ WORKDIR /home/app
 COPY function/package.json ./
 
 # Install dependencies
-RUN npm install --only=production
+RUN npm install
 
 # COPY function files and folders
 COPY function/ ./
