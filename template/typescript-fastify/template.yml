@@ -1,5 +1,5 @@
 language: typescript-fastify
 fprocess: node index.js
 welcome_message: |
-  You have created a TypeScript function using Fastify template v1.0.
+  You have created a TypeScript function using Fastify template v1.0.1.
   This template uses Node.js 14 (LTS), Fastify and the OpenFaaS of-watchdog.

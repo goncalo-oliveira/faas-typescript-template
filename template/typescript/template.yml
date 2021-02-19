@@ -1,5 +1,5 @@
 language: typescript
 fprocess: node index.js
 welcome_message: |
-  You have created a TypeScript function using template v1.0.
+  You have created a TypeScript function using template v1.0.1.
   This template uses Node.js 14 (LTS), Express and the OpenFaaS of-watchdog.
