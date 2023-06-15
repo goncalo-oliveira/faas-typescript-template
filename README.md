@@ -2,6 +2,8 @@
 
 This project offers templates for [OpenFaaS](https://www.openfaas.com) that make use of Node and TypeScript. All templates use Node 14 and of-watchdog so you can have full control over the HTTP context.
 
+> NOTICE: I've stopped using OpenFaaS and as such, I'm no longer maintaining this project. I've moved all my workloads to [Knative](https://knative.dev/docs/) and [JustFaaS](https://github.com/justfaas/justfaas), which don't require the usage of templates.
+
 ## Installing the template
 
 Just pull the template with the faas CLI.
